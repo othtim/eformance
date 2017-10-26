@@ -1,0 +1,2 @@
+<phormulate> removing services with nlite, ntlite, winbuilder, adk10 compression... you can shrink the hell out of a windows install
+

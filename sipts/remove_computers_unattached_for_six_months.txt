@@ -1,0 +1,3 @@
+$date = (Get-Date).AddDays(-120)
+Get-ADComputer -Property Name,lastLogonDate -Filter {lastLogonDate -lt $date } | Remove-ADObject -Recursive
+

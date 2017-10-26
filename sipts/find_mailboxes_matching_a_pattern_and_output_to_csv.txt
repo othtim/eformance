@@ -1,0 +1,1 @@
+Get-Mailbox -ResultSize Unlimited | Where-Object {($_.PrimarySMTPAddress -like "*domain1.edu*")} | Export-CSV -Path C:\emails.csv

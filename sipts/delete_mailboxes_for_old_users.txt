@@ -1,0 +1,2 @@
+$time = (Get-Date).Adddays(-(90))
+Get-ADUser -SearchBase "ou=terminated users,dc=crossing,dc=ads" -Filter {LastLogonTimeStamp -lt $time -and enabled -eq $false} | foreach {Get-Mailbox $_.name} | foreach {Remove-Mailbox -Identity $_ }

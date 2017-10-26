@@ -1,0 +1,3 @@
+Get-AdUser -SearchBase "ou=,dc=,dc=" -filter * | % {
+	Set-ADUser $_.sAMAccountName -Add @{targetAddress="$($_.sAMAccountName)@somedomain.onmicrosoft.com"}
+}

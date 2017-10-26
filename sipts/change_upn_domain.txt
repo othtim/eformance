@@ -1,0 +1,9 @@
+Import-Module ActiveDirectory
+$oldSuffix = ""
+$newSuffix = ""
+$ou = "OU=,DC=,DC=ads"
+$server = ""
+Get-ADUser -SearchBase $ou -filter * | ForEach-Object {
+$newUpn = $_.UserPrincipalName.Replace($oldSuffix,$newSuffix)
+$_ | Set-ADUser -server $server -UserPrincipalName $newUpn
+}

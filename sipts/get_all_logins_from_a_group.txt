@@ -1,0 +1,1 @@
+Get-WinEvent -LogName Security -Computername <computer> | where id -eq "4624" | where-object Message -match $groupname | select -expandproperty message

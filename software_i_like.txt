@@ -1,0 +1,16 @@
+hd tune
+recuva
+KiTTY
+rufus
+ccleaner
+openhwmonitor
+notepad++
+doPdf
+vlc player
+famatech advanced ip scanner
+7zip
+ireasoning mib browser
+bittitan
+nmap/zenmap
+iperf
+spacesniffer
